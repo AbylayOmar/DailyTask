@@ -18,6 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('/tasks', 'TaskController');
-Route::get('/daily/{id}', 'DailyController@index');
-Route::post('/daily/{id}', 'DailyController@update');
+Route::post('/login', 'ApiController@login');
+Route::middleware('auth:api')->apiResource('/tasks', 'TaskController');
+Route::middleware('auth:api')->get('/daily/{id}', 'DailyController@index');
+Route::middleware('auth:api')->post('/daily/{id}', 'DailyController@update');
+Route::middleware('auth:api')->get('/challenges', 'ChallengeController@index');
