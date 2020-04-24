@@ -23,3 +23,4 @@ Route::middleware('auth:api')->apiResource('/tasks', 'TaskController');
 Route::middleware('auth:api')->get('/daily/{id}', 'DailyController@index');
 Route::middleware('auth:api')->post('/daily/{id}', 'DailyController@update');
 Route::middleware('auth:api')->get('/challenges', 'ChallengeController@index');
+Route::middleware('auth:api')->post('/results', 'DailyController@results');

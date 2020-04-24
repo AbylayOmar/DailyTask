@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Task;
+use App\DailyResult;
 
 class DailyController extends Controller
 {
@@ -20,5 +21,17 @@ class DailyController extends Controller
         }
 
         return $response;
+    }
+
+    public function results(Request $request) {
+        $data = $request->json()->all();
+        foreach($data['tasks'] as $i) {
+            $ds = new DailyResult();
+            $ds -> task_id = $i['id'];
+            $ds -> user_id = 1;
+            $ds -> user_count = $i['count'];
+            $ds->save();
+        }
+        return response("Succes");
     }
 }
