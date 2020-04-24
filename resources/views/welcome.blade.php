@@ -50,6 +50,13 @@
                         <td>GET</td>
                         <td><pre id ="challenges"></pre></td>
                     </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>http://daily.prosthesis.kz/api/v1/results</td>
+                        <td>POST</td>
+                        <td><pre id ="results"></pre></td>
+                        <td><- Example of body where is <b>id</b> is <b>task_id</b></td>
+                    </tr>
                 </tbody>
             </table>
             </div>
@@ -112,6 +119,22 @@
                     ]
                     
         document.getElementById("challenges").textContent = JSON.stringify(challenges, undefined, 4);
+
+        var results = {
+                        "tasks": [
+                            {
+                                "id": 1,
+                                "count": 10
+                            },
+                            {
+                                "id": 2,
+                                "count": 3
+                            }
+                        ]
+                        
+                    }
+                    
+        document.getElementById("results").textContent = JSON.stringify(results, undefined, 4);
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
