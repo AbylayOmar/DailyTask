@@ -80,16 +80,19 @@
         document.getElementById("login").textContent = JSON.stringify(login, undefined, 4);
         var daily = [
                         {
-                            "id": 1,
-                            "name": null,
-                            "desc_link": null,
-                            "count": 5
+                            "id": 12,
+                            "name": "salauat 12 bet",
+                            "link": "https://www.youtube.com/watch?v=N771fkruaNI"
                         },
                         {
-                            "id": 2,
-                            "name": null,
-                            "desc_link": "https://www.youtube.com/watch?v=N771fkruaNI",
-                            "count": 10
+                            "id": 13,
+                            "name": "kuran 20 bet",
+                            "link": null
+                        },
+                        {
+                            "id": 14,
+                            "name": "dua 17 bet",
+                            "link": "https://www.youtube.com/watch?v=bbFiESiOrXM"
                         }
                     ]
                     
@@ -120,19 +123,16 @@
                     
         document.getElementById("challenges").textContent = JSON.stringify(challenges, undefined, 4);
 
-        var results = {
-                        "tasks": [
+        var results = [
                             {
-                                "id": 1,
-                                "count": 10
+                                "id": 12,
+                                "result": true
                             },
                             {
-                                "id": 2,
-                                "count": 3
+                                "id": 13,
+                                "result": false
                             }
                         ]
-                        
-                    }
                     
         document.getElementById("results").textContent = JSON.stringify(results, undefined, 4);
     </script>
