@@ -11,16 +11,16 @@ class DailyController extends Controller
     public function index($id) {
         $tasks = Task::all();
         $response = [];
-        for ($i = 0; $i < count($tasks); $i++) {
+        for ($i = 11; $i < count($tasks); $i++) {
             error_log($tasks[$i]);
             $response[$i] = [];
             $response[$i]['id'] = $tasks[$i] -> id;
-            $response[$i]['name'] = $tasks[$i] -> name;
-            $response[$i]['desc_link'] = $tasks[$i] -> desc_link;
-            $response[$i]['count'] = random_int(5, 20);
+            $response[$i]['name'] = $tasks[$i] -> title;
+            $response[$i]['link'] = $tasks[$i] -> desc_link;
+            if ($tasks[$i] -> id >= 12) $response[$i]['name'] .= " ".strval(random_int(5, 20))." bet";
         }
 
-        return $response;
+        return json_encode(array_values($response));
     }
 
     public function results(Request $request) {
@@ -29,9 +29,9 @@ class DailyController extends Controller
             $ds = new DailyResult();
             $ds -> task_id = $i['id'];
             $ds -> user_id = 1;
-            $ds -> user_count = $i['count'];
+            $ds -> result = $i['result'];
             $ds->save();
         }
-        return response("Succes");
+        return response("Success");
     }
 }

@@ -12,12 +12,21 @@ class TaskSeeder extends Seeder
      */
     public function run()
     {
-        Task::create([
-            'title' => 'kitap'
-        ]);
+        for ($i = 1; $i <= 11; $i++)
+            Task::create([
+                'title' => strval($i)
+            ]);
+            
         Task::create([
             'title' => 'salauat',
             'desc_link' => 'https://www.youtube.com/watch?v=N771fkruaNI'
+        ]);
+        Task::create([
+            'title' => 'kuran'
+        ]);
+        Task::create([
+            'title' => 'dua',
+            'desc_link' => 'https://www.youtube.com/watch?v=bbFiESiOrXM'
         ]);
     }
 }

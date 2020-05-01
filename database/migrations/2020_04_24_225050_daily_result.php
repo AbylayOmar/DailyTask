@@ -17,7 +17,7 @@ class DailyResult extends Migration
             $table->id();
             $table->integer('task_id');
             $table->integer('user_id');
-            $table->integer('user_count');
+            $table->string('result');
             $table->timestamps();
         });
     }
