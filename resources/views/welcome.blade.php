@@ -57,6 +57,12 @@
                         <td><pre id ="results"></pre></td>
                         <td><- Example of body where is <b>id</b> is <b>task_id</b></td>
                     </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>http://daily.prosthesis.kz/api/v1/statistic</td>
+                        <td>GET</td>
+                        <td><pre id ="stat"></pre></td>
+                    </tr>
                 </tbody>
             </table>
             </div>
@@ -135,6 +141,14 @@
                         ]
                     
         document.getElementById("results").textContent = JSON.stringify(results, undefined, 4);
+
+        var stat = {
+                        "percent": 65,
+                        "finished": 150,
+                        "all": 230
+                    }
+                    
+        document.getElementById("stat").textContent = JSON.stringify(stat, undefined, 4);
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

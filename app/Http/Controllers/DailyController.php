@@ -34,4 +34,9 @@ class DailyController extends Controller
         }
         return response("Success", 200);
     }
+
+    public function statistic() {
+        $resp = ["percent" => 65, "finished" => 150, "all" => 230];
+        return json_encode($resp);
+    }
 }
