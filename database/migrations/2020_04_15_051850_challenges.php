@@ -19,6 +19,7 @@ class Challenges extends Migration
             $table->integer('price');
             $table->boolean('is_free');
             $table->string('image_url')->nullable()->default(null);
+            $table->string('state');
             $table->string('url');
             $table->timestamps();
         });

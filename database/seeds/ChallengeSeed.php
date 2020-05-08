@@ -16,6 +16,7 @@ class ChallengeSeed extends Seeder
             'name' => 'Ramazan Challange',
             'price' => 0,
             'is_free' => true,
+            'state' => 'new',
             'url' => 'https:://google.com'
         ]);
 
@@ -23,6 +24,7 @@ class ChallengeSeed extends Seeder
             'name' => 'Book reading Challange',
             'price' => 1000,
             'is_free' => false,
+            'state' => 'null',
             'url' => 'https:://google.com'
         ]);
     }
