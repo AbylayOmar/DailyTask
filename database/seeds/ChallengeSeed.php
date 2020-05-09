@@ -17,7 +17,7 @@ class ChallengeSeed extends Seeder
             'price' => 0,
             'is_free' => true,
             'state' => 'new',
-            'url' => 'https:://google.com'
+            'url' => 'http://daily.prosthesis.kz/challenges/ramazan'
         ]);
 
         Challenge::create([
