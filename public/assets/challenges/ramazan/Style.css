@@ -1,0 +1,133 @@
+h1.top{
+  font-size:20px;
+  color: white;
+  text-align: center;
+  padding-top: 17px;
+  font-family: Verdana;
+}
+
+h1.top2{
+  font-size:18px;
+  color: #404040;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h1.top3{
+  font-size:18px;
+  color: #404040;
+  text-align: center;
+  padding-top: -1px;
+}
+
+h1.top4{
+  font-size:15px;
+  color: #404040;
+  text-align: center;
+  padding-top: -1px;
+
+}
+
+h1.top5{
+  font-size:18px;
+  color: #404040;
+  text-align: center;
+  padding-top: -1px;
+}
+
+hr.line{
+  width: 50%;
+  border: 0.8px solid #4395D2;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: -12px;
+}
+
+.shadow {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 7px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.button {
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #4395D2;
+  border-radius: 5px;
+  width:180px;
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.button2 {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: #4395D2;
+  border-radius: 5px;
+  width:110px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5%;
+}
+
+/* .shadow2 {
+   background: white;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   padding: 12px;
+   border-radius: 7px;
+   margin-left: 5%;
+   margin-right: 5%;
+} */
+
+
+
+table {
+  margin-top: 5%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td:first-child {
+  background: #AFCDE7;
+  color: white;
+  padding: 10px 10px;
+}
+th, td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+td {
+  background: #D8E6F3;
+}

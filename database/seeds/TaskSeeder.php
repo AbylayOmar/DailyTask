@@ -18,15 +18,15 @@ class TaskSeeder extends Seeder
             ]);
             
         Task::create([
-            'title' => 'salauat',
+            'title' => 'Салауат',
             'desc_link' => 'https://www.youtube.com/watch?v=N771fkruaNI'
         ]);
         Task::create([
-            'title' => 'kuran'
+            'title' => 'Құран Кәрім'
         ]);
         Task::create([
-            'title' => 'dua',
-            'desc_link' => 'https://www.youtube.com/watch?v=bbFiESiOrXM'
+            'title' => 'Ислам ғылымхалы',
+            'desc_link' => 'http://muslim.kz/files/libraries/e7f3697d7d30839fe9d7a9b9ac72c9f9.pdf'
         ]);
     }
 }

@@ -17,7 +17,7 @@ class DailyController extends Controller
             $response[$i]['id'] = $tasks[$i] -> id;
             $response[$i]['name'] = $tasks[$i] -> title;
             $response[$i]['link'] = $tasks[$i] -> desc_link;
-            if ($tasks[$i] -> id >= 12) $response[$i]['name'] .= " ".strval(random_int(5, 20))." bet";
+            if ($tasks[$i] -> id >= 12) $response[$i]['name'] .= " ".strval(random_int(5, 20))." бет";
         }
 
         return json_encode(array_values($response));
