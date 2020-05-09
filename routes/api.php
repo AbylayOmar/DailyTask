@@ -19,9 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 }); 
 
 Route::post('/login', 'ApiController@login');
-Route::middleware('auth:api')->apiResource('/tasks', 'TaskController');
-Route::middleware('auth:api')->get('/daily/{id}', 'DailyController@index');
-Route::middleware('auth:api')->post('/daily/{id}', 'DailyController@update');
-Route::middleware('auth:api')->get('/challenges', 'ChallengeController@index');
-Route::middleware('auth:api')->post('/results', 'DailyController@results');
-Route::middleware('auth:api')->get('/statistic', 'DailyController@statistic');
+Route::apiResource('/tasks', 'TaskController');
+Route::get('/daily/{id}', 'DailyController@index');
+Route::post('/daily/{id}', 'DailyController@update');
+Route::get('/challenges', 'ChallengeController@index');
+Route::post('/results', 'DailyController@results');
+Route::get('/statistic', 'DailyController@statistic');
