@@ -52,4 +52,6 @@ $app->singleton(
 |
 */
 
+$app->register(BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class);
+
 return $app;
